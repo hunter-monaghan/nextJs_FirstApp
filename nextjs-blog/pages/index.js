@@ -16,16 +16,19 @@ export default function Home() {
     if (username && password) {
       if (username.length <= 0) {
         console.log("Please enter username");
-      } 
+      }
 
       if (password.length <= 0) {
         console.log("Please enter password");
-      } 
+      }
 
-      if(username === 'hunter.monaghan@tekletics.com' || password === 'Abc123!'){
-        router.push('/gamesList');
-      }else{
-        alert('Invalid Username or Password');
+      if (
+        username === "hunter.monaghan@tekletics.com" ||
+        password === "Abc123!"
+      ) {
+        router.push("/gamesList");
+      } else {
+        alert("Invalid Username or Password");
       }
 
       console.log("LOGGED IN");
@@ -39,7 +42,7 @@ export default function Home() {
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
-  
+
   return (
     <div className={styles.container}>
       <Head>
@@ -55,7 +58,6 @@ export default function Home() {
         <div className={styles.formContainer}>
           <form className={styles.form}>
             <label className={styles.label}>
-              Username:
               <input
                 type="text"
                 onChange={handleUsernameChange}
@@ -64,7 +66,6 @@ export default function Home() {
               />
             </label>
             <label className={styles.label}>
-              Password:
               <input
                 type="password"
                 onChange={handlePasswordChange}

@@ -8,7 +8,7 @@ export default async function handler(req, res) {
     const connection = await pool.getConnection();
 
     // Execute a query
-    const [rows] = await connection.query('SELECT * FROM your_table');
+    const [rows] = await connection.query('SELECT * FROM my_schema1');
 
     // Release the connection back to the pool
     connection.release();

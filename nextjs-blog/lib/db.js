@@ -1,13 +1,13 @@
 // lib/db.js
 
-const mysql = require('mysql2/promise');
+const mysql = require('mysql2');
 
 // Replace these with your database credentials
 const dbConfig = {
-  host: 'your-database-host',
-  user: 'your-username',
-  password: 'your-password',
-  database: 'your-database-name',
+  host: '127.0.0.1',
+  user: 'hunter_monaghan',
+  password: 'Abc123!',
+  database: 'my_schema1',
 };
 
 // Create a connection pool
