@@ -1,6 +1,6 @@
 // lib/db.js
 
-const mysql = require('mysql2');
+const mysql = require('mysql2/promise');
 
 // Replace these with your database credentials
 const dbConfig = {

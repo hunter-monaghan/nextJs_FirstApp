@@ -11,8 +11,6 @@ export default function Home() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    console.log("HIT LOGIN", username, password);
-
     if (username && password) {
       if (username.length <= 0) {
         console.log("Please enter username");
@@ -23,7 +21,7 @@ export default function Home() {
       }
 
       if (
-        username === "hunter.monaghan@tekletics.com" ||
+        username === "hunter.monaghan@tekletics.com" &&
         password === "Abc123!"
       ) {
         router.push("/gamesList");
