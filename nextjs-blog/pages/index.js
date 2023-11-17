@@ -39,6 +39,7 @@ export default function Home() {
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
+  
   return (
     <div className={styles.container}>
       <Head>
